@@ -1,0 +1,555 @@
+# Instincts generated from https://github.com/1208nn/BPB-Worker-Panel
+# Generated: 2026-03-09T13:21:22.538Z
+# Version: 2.0
+
+---
+id: BPB-Worker-Panel-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/1208nn/BPB-Worker-Panel
+---
+
+# BPB Worker Panel Commit Length
+
+## Action
+
+Keep commit messages concise (under 50 characters)
+
+## Evidence
+
+- Average commit message length: 28 chars
+- Based on 200 commits
+
+---
+id: BPB-Worker-Panel-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/1208nn/BPB-Worker-Panel
+---
+
+# BPB Worker Panel Naming Files
+
+## Action
+
+Use camelCase naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: camelCase
+
+---
+id: BPB-Worker-Panel-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/1208nn/BPB-Worker-Panel
+---
+
+# BPB Worker Panel Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: BPB-Worker-Panel-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/1208nn/BPB-Worker-Panel
+---
+
+# BPB Worker Panel Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: BPB-Worker-Panel-workflow-refactoring
+trigger: "when refactoring code"
+confidence: 0.9
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/1208nn/BPB-Worker-Panel
+---
+
+# BPB Worker Panel Workflow Refactoring
+
+## Action
+
+Follow the refactoring workflow:
+1. Ensure tests pass before refactor
+2. Refactor code structure
+3. Verify tests still pass
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~8x per month
+- Files: src/**/*
+
+---
+id: BPB-Worker-Panel-workflow-release-version-bump
+trigger: "when doing release version bump"
+confidence: 0.8
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/1208nn/BPB-Worker-Panel
+---
+
+# BPB Worker Panel Workflow Release Version Bump
+
+## Action
+
+Follow the release-version-bump workflow:
+1. Update RELEASE.md with changes
+2. Update package.json version
+3. Update panel HTML with version
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~6x per month
+- Files: RELEASE.md, package.json, src/assets/panel/index.html
+
+---
+id: BPB-Worker-Panel-workflow-multilingual-docs-update
+trigger: "when doing multilingual docs update"
+confidence: 0.9
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/1208nn/BPB-Worker-Panel
+---
+
+# BPB Worker Panel Workflow Multilingual Docs Update
+
+## Action
+
+Follow the multilingual-docs-update workflow:
+1. Update English docs files
+2. Update corresponding Farsi docs files
+3. Update README files if needed
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~8x per month
+- Files: docs/en/docs/**/*.md, docs/fa/docs/**/*.md, README.md
+
+---
+id: BPB-Worker-Panel-workflow-core-protocol-refactoring
+trigger: "when doing core protocol refactoring"
+confidence: 0.9
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/1208nn/BPB-Worker-Panel
+---
+
+# BPB Worker Panel Workflow Core Protocol Refactoring
+
+## Action
+
+Follow the core-protocol-refactoring workflow:
+1. Update protocol handlers in cores
+2. Update corresponding type definitions
+3. Ensure all protocol variants are updated
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~12x per month
+- Files: src/cores/clash/**/*.ts, src/cores/sing-box/**/*.ts, src/cores/xray/**/*.ts
+
+---
+id: BPB-Worker-Panel-workflow-websocket-protocol-improvements
+trigger: "when doing websocket protocol improvements"
+confidence: 0.65
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/1208nn/BPB-Worker-Panel
+---
+
+# BPB Worker Panel Workflow Websocket Protocol Improvements
+
+## Action
+
+Follow the websocket-protocol-improvements workflow:
+1. Update common WebSocket utilities
+2. Update VLESS protocol implementation
+3. Update Trojan protocol implementation
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~3x per month
+- Files: src/protocols/websocket/common.ts, src/protocols/websocket/vless.ts, src/protocols/websocket/trojan.ts
+
+---
+id: BPB-Worker-Panel-workflow-panel-feature-addition
+trigger: "when doing panel feature addition"
+confidence: 0.7
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/1208nn/BPB-Worker-Panel
+---
+
+# BPB Worker Panel Workflow Panel Feature Addition
+
+## Action
+
+Follow the panel-feature-addition workflow:
+1. Update panel HTML structure
+2. Add JavaScript functionality
+3. Update handlers for new endpoints
+4. Update release notes
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~4x per month
+- Files: src/assets/panel/index.html, src/assets/panel/script.js, src/common/handlers.ts
+
+---
+id: BPB-Worker-Panel-workflow-configuration-docs-sync
+trigger: "when doing configuration docs sync"
+confidence: 0.75
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/1208nn/BPB-Worker-Panel
+---
+
+# BPB Worker Panel Workflow Configuration Docs Sync
+
+## Action
+
+Follow the configuration-docs-sync workflow:
+1. Update English configuration docs
+2. Update Farsi configuration docs
+3. Update release notes
+4. Update images if needed
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~5x per month
+- Files: docs/en/docs/configuration/**/*.md, docs/fa/docs/configuration/**/*.md, RELEASE.md
+
+---
+id: bpb-worker-panel-camelcase-files
+trigger: "When creating or renaming a file"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: 1208nn/BPB-Worker-Panel
+---
+
+# Bpb Worker Panel Camelcase Files
+
+## Action
+
+Use camelCase naming convention
+
+## Evidence
+
+- File naming pattern observed in src folder structure
+- TypeScript project with camelCase convention
+
+---
+id: bpb-worker-panel-pascalcase-classes
+trigger: "When defining a class"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: 1208nn/BPB-Worker-Panel
+---
+
+# Bpb Worker Panel Pascalcase Classes
+
+## Action
+
+Use PascalCase naming convention
+
+## Evidence
+
+- Naming conventions pattern in codeStyle analysis
+- TypeScript standard conventions
+
+---
+id: bpb-worker-panel-screaming-snake-constants
+trigger: "When defining a constant"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: 1208nn/BPB-Worker-Panel
+---
+
+# Bpb Worker Panel Screaming Snake Constants
+
+## Action
+
+Use SCREAMING_SNAKE_CASE naming convention
+
+## Evidence
+
+- Constants naming pattern in codeStyle analysis
+- Consistent with TypeScript conventions
+
+---
+id: bpb-worker-panel-named-exports
+trigger: "When exporting from a module"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: 1208nn/BPB-Worker-Panel
+---
+
+# Bpb Worker Panel Named Exports
+
+## Action
+
+Use named exports instead of default exports
+
+## Evidence
+
+- ExportStyle: named in codeStyle analysis
+- Mixed import style suggests named exports preference
+
+---
+id: bpb-worker-panel-try-catch-errors
+trigger: "When handling potential errors"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: 1208nn/BPB-Worker-Panel
+---
+
+# Bpb Worker Panel Try Catch Errors
+
+## Action
+
+Use try-catch blocks for error handling
+
+## Evidence
+
+- ErrorHandling style: try-catch in analysis
+- No custom error classes or global handlers detected
+
+---
+id: bpb-worker-panel-freeform-commits
+trigger: "When writing a commit message"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: 1208nn/BPB-Worker-Panel
+---
+
+# Bpb Worker Panel Freeform Commits
+
+## Action
+
+Write concise, descriptive message without strict prefix conventions
+
+## Evidence
+
+- Commit examples: 'Updated docs.', 'Bug fixes and typos'
+- No prefixes pattern detected
+- Average length 28 characters
+
+---
+id: bpb-worker-panel-issue-references
+trigger: "When fixing bugs or closing issues"
+confidence: 0.7
+domain: git
+source: repo-analysis
+source_repo: 1208nn/BPB-Worker-Panel
+---
+
+# Bpb Worker Panel Issue References
+
+## Action
+
+Include 'closes #[issue-number]' in commit message
+
+## Evidence
+
+- Commit: 'Bug fixes and typos, closes #1224 and #1191'
+- Commit: 'Added built-in Proxy IPs list page, closes #1185'
+
+---
+id: bpb-worker-panel-release-workflow
+trigger: "When preparing a new release"
+confidence: 0.95
+domain: workflow
+source: repo-analysis
+source_repo: 1208nn/BPB-Worker-Panel
+---
+
+# Bpb Worker Panel Release Workflow
+
+## Action
+
+Update RELEASE.md, package.json version, and panel HTML in sequence
+
+## Evidence
+
+- Release workflow pattern with 6x/month frequency
+- Consistent file involvement across releases
+
+---
+id: bpb-worker-panel-bilingual-docs
+trigger: "When updating documentation"
+confidence: 0.92
+domain: workflow
+source: repo-analysis
+source_repo: 1208nn/BPB-Worker-Panel
+---
+
+# Bpb Worker Panel Bilingual Docs
+
+## Action
+
+Update both English and Farsi documentation files simultaneously
+
+## Evidence
+
+- Multilingual docs workflow with 8x/month frequency
+- Consistent en/fa folder structure
+
+---
+id: bpb-worker-panel-protocol-sync
+trigger: "When refactoring protocol implementations"
+confidence: 0.88
+domain: workflow
+source: repo-analysis
+source_repo: 1208nn/BPB-Worker-Panel
+---
+
+# Bpb Worker Panel Protocol Sync
+
+## Action
+
+Update all three cores (clash, sing-box, xray) and corresponding type definitions
+
+## Evidence
+
+- Core protocol refactoring workflow with 12x/month frequency
+- Consistent pattern across all protocol cores
+
+---
+id: bpb-worker-panel-websocket-variants
+trigger: "When updating WebSocket protocols"
+confidence: 0.89
+domain: workflow
+source: repo-analysis
+source_repo: 1208nn/BPB-Worker-Panel
+---
+
+# Bpb Worker Panel Websocket Variants
+
+## Action
+
+Update common utilities, VLESS, and Trojan implementations together
+
+## Evidence
+
+- WebSocket workflow pattern with 3x/month frequency
+- Consistent file involvement pattern
+
+---
+id: bpb-worker-panel-panel-fullstack
+trigger: "When adding panel features"
+confidence: 0.85
+domain: workflow
+source: repo-analysis
+source_repo: 1208nn/BPB-Worker-Panel
+---
+
+# Bpb Worker Panel Panel Fullstack
+
+## Action
+
+Update HTML, JavaScript, handlers, and release notes in sequence
+
+## Evidence
+
+- Panel feature workflow with 4x/month frequency
+- Frontend-backend-docs update pattern
+
+---
+id: bpb-worker-panel-config-docs-images
+trigger: "When updating configuration documentation"
+confidence: 0.87
+domain: workflow
+source: repo-analysis
+source_repo: 1208nn/BPB-Worker-Panel
+---
+
+# Bpb Worker Panel Config Docs Images
+
+## Action
+
+Update both language versions, release notes, and associated images
+
+## Evidence
+
+- Configuration docs workflow with 5x/month frequency
+- Images included in file involvement pattern
+
+---
+id: bpb-worker-panel-refactor-terseness
+trigger: "When committing refactoring changes"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: 1208nn/BPB-Worker-Panel
+---
+
+# Bpb Worker Panel Refactor Terseness
+
+## Action
+
+Use brief commit messages like 'Refactored.' or 'Pruned assets.'
+
+## Evidence
+
+- Refactoring workflow examples show terse commits
+- Pattern of minimal description for cleanup work
+
+---
+id: bpb-worker-panel-separate-tests
+trigger: "When writing tests"
+confidence: 0.7
+domain: testing
+source: repo-analysis
+source_repo: 1208nn/BPB-Worker-Panel
+---
+
+# Bpb Worker Panel Separate Tests
+
+## Action
+
+Place tests in separate location from source code
+
+## Evidence
+
+- Architecture shows testLocation: separate
+- No tests folder visible in src layout
+
